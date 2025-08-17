@@ -1,0 +1,8 @@
+@GetUserIPProject_HostAddress = http://localhost:5209
+
+GET {{GetUserIPProject_HostAddress}}/api/ip/current
+Accept: application/json
+###
+GET {{GetUserIPProject_HostAddress}}/api/ip/health-check
+Accept: application/json
+###
