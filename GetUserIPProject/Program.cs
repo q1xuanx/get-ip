@@ -8,7 +8,6 @@ builder.Services.AddAuthentication().AddJwtBearer("api", jwtOptions =>
 {
     jwtOptions.TokenValidationParameters = new TokenValidationParameters
     {
-     
         ValidateIssuer = false,
         ValidateAudience = false,
         ValidateIssuerSigningKey = true,
