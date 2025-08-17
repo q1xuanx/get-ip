@@ -1,9 +1,18 @@
-# Get-IP API
+# Get IP API
 
 A lightweight **.NET API** to retrieve the **IP address** and **Port** of the client making the request.
 
-## 🚀 Endpoint
+## 🔑 Authentication
 
+This API requires a **Bearer Token** for every request.
+Include the token in the `Authorization` header:
+### Example Request with cURL
+```bash
+curl -H "Authorization: Bearer <your_token_here>" \
+     http://localhost:<port>/api/current
+```
+
+## 🚀 Endpoint
 ### `GET /api/current`
 
 Returns the client IP address and port number.
@@ -32,3 +41,4 @@ Returns the client IP address and port number.
   "port": ""
 }
 ```
+
