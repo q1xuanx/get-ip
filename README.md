@@ -9,11 +9,11 @@ Include the token in the `Authorization` header:
 ### Example Request with cURL
 ```bash
 curl -H "Authorization: Bearer <your_token_here>" \
-     http://localhost:<port>/api/current
+     http://localhost:<port>/api/ip/current
 ```
 
 ## 🚀 Endpoint
-### `GET /api/current`
+### `GET /api/ip/current`
 
 Returns the client IP address and port number.
 
@@ -41,4 +41,5 @@ Returns the client IP address and port number.
   "port": ""
 }
 ```
+
 
